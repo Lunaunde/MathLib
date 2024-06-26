@@ -1,0 +1,1 @@
+$scoreboard players set #$(pick_information.operand)_number_1 number $(char)
