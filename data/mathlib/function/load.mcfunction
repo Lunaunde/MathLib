@@ -1,2 +1,2 @@
-tellraw @a {"text":"§p[MathLib]Reloaded."}
+tellraw @a {"text":"[MathLib]Reloaded.","color": "green"}
 scoreboard objectives add number dummy
