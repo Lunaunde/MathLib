@@ -1,5 +1,13 @@
-$execute store success storage math success int 1 run scoreboard players set #number number $(char)
-execute if data storage math {success:1} run return 1
+execute if data storage math {char:"0"} run return 1
+execute if data storage math {char:"1"} run return 1
+execute if data storage math {char:"2"} run return 1
+execute if data storage math {char:"3"} run return 1
+execute if data storage math {char:"4"} run return 1
+execute if data storage math {char:"5"} run return 1
+execute if data storage math {char:"6"} run return 1
+execute if data storage math {char:"7"} run return 1
+execute if data storage math {char:"8"} run return 1
+execute if data storage math {char:"9"} run return 1
 execute if data storage math {char:"."} run return 2
 execute if data storage math {char:"E"} run return 3
 execute if data storage math {char:"b"} run return 4
