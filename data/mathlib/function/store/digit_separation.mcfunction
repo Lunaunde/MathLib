@@ -12,4 +12,4 @@ execute if data storage math {char_type:4} run function mathlib:store/jump with 
 $execute store result storage math store_information.place int 1 run scoreboard players get #$(operand)_place number
 $execute store result storage math store_information.place_2 int 1 run scoreboard players get #$(operand)_place_2 number
 $execute store result storage math store_information.digit int 1 run scoreboard players get #$(operand)_digit number
-function mathlib:store/pick with storage math store_information
+function mathlib:store/digit_separation with storage math store_information
