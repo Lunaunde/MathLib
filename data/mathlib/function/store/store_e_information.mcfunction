@@ -1,4 +1,3 @@
-$scoreboard players set #$(operand)_number_$(digit) number $(char)
 $scoreboard players operation #$(operand)_decimal_part_length_number number = #$(operand)_digit number
 $scoreboard players operation #$(operand)_decimal_part_length_number number -= #$(operand)_integer_part_length_number number
 $scoreboard players add #$(operand)_place number 1
