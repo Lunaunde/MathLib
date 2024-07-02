@@ -1,0 +1,1 @@
+function mathlib:store/jump with storage math store_information

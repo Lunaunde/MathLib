@@ -15,3 +15,4 @@ execute if data storage math {char:"d"} run return 4
 execute if data storage math {char:"f"} run return 4
 execute if data storage math {char:"L"} run return 4
 execute if data storage math {char:"s"} run return 4
+execute if data storage math {char:"-"} run return 5
