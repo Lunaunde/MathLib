@@ -15,5 +15,6 @@ scoreboard players remove #digit number 1
 scoreboard players remove #digit_exponent number 1
 
 #part five:real digit data
+function mathlib:store/place_digit_reload with storage math store_information
 $execute unless score #$(operand)_have_exponent number matches 1 run function mathlib:store/digit_change_without_exponent
 $execute if score #$(operand)_have_exponent number matches 1 run function mathlib:store/digit_change_with_exponent
