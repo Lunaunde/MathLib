@@ -1,4 +1,4 @@
-$say $(operand) $(place) $(place_2) $(digit) $(digit_exponent)
+$execute if score #debug number matches 1 run say $(operand) $(place) $(place_2) $(digit) $(digit_exponent)
 data remove storage minecraft:math char
 data modify storage math success set value 1
 $execute store success storage math success int 1 run data modify storage math char set string storage math $(operand) $(place) $(place_2)
@@ -11,8 +11,8 @@ execute if data storage math {char_type:2} run function mathlib:store/store_deci
 execute if data storage math {char_type:3} run function mathlib:store/store_exponent_information with storage math store_information
 execute if data storage math {char_type:5} run function mathlib:store/store_minus_information with storage math store_information
 execute if data storage math {char_type:4} run function mathlib:store/end with storage math store_information
-$execute store result storage math store_information.place int 1 run scoreboard players get #$(operand)_place number
-$execute store result storage math store_information.place_2 int 1 run scoreboard players get #$(operand)_place_2 number
-$execute store result storage math store_information.digit int 1 run scoreboard players get #$(operand)_digit number
-$execute store result storage math store_information.digit_exponent int 1 run scoreboard players get #$(operand)_digit_exponent number
+execute store result storage math store_information.place int 1 run scoreboard players get #place number
+execute store result storage math store_information.place_2 int 1 run scoreboard players get #place_2 number
+execute store result storage math store_information.digit int 1 run scoreboard players get #digit number
+execute store result storage math store_information.digit_exponent int 1 run scoreboard players get #digit_exponent number
 function mathlib:store/digit_separation with storage math store_information
