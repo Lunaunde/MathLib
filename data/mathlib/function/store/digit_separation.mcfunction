@@ -1,4 +1,4 @@
-$execute if score #debug number matches 1 run say $(operand) $(place) $(place_2) $(digit) $(digit_exponent)
+$execute if score #debug_show_step number matches 1 run tellraw @s {"text":"operand:$(operand) place:$(place) place_2:$(place_2) digits:$(digits) digits_exponent:$(digits_exponent)"}
 data remove storage minecraft:math char
 data modify storage math success set value 1
 $execute store success storage math success int 1 run data modify storage math char set string storage math $(operand) $(place) $(place_2)

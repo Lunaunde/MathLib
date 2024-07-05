@@ -13,8 +13,8 @@ function mathlib:store/digit_separation with storage math store_information
 #part four:digit-1
 scoreboard players remove #digit number 1
 scoreboard players remove #digit_exponent number 1
-scoreboard players operation #$(operand)_number_part_length number = #digit number
-scoreboard players operation #$(operand)_exponent_part_length number = #digit_exponent number
+$scoreboard players operation #$(operand)_number_part_length number = #digit number
+$scoreboard players operation #$(operand)_exponent_part_length number = #digit_exponent number
 
 #part five:exponent
-function mathlib:functions/exponent {operand:"operand"}
+$function mathlib:store/exponent {operand:$(operand)}

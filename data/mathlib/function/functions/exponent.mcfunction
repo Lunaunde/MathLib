@@ -1,2 +1,4 @@
-$execute unless score #$(operand)_have_exponent number matches 0 run scoreboard players operation #$(operand)_exponent number = #$(operand)_integer_part_length
-execute if score #$(operand)_have_exponent number matches 1 if score #$(operand)_exponent_part_length number matches 1 run scoreboard  
+$function mathlib/store {operand:"$(operand)"}
+$scoreboard players operation #ans number = #$(operand)_exponent number
+$execute store result storage minecraft:math ans int 1 run scoreboard players get #$(operand)_exponent number
+execute if score #debug_output number matches 1 run tellraw @s {"storage":"math","nbt":"ans"}

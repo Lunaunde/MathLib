@@ -1,3 +1,4 @@
 $function mathlib/store {operand:"$(operand)"}
 $scoreboard players operation #ans number = #$(operand)_sgn number
 $execute store result storage minecraft:math ans int 1 run scoreboard players get #$(operand)_sgn number
+execute if score #debug_output number matches 1 run tellraw @s {"storage":"math","nbt":"ans"}

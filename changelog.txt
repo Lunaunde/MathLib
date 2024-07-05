@@ -1,4 +1,5 @@
-(0.1.3)2024.7.4:解决了store_minus_information的bug。
+(0.1.4)2024.7.5:完成了取出exponent(数量级)的功能，水了exponent函数，做了debug的改动。
+(0.1.3)2024.7.4:解决了store_minus_information的bug，并且水了一个sgn函数。
 (0.1.2)2024.7.3:去除了stone中不必要的函数宏以优化程序。
 (0.1.1)2024.7.2:修改了stone不能读取"E"后"-"的问题，并且将sgn优化。
 (0.1.0)2024.7.1:基本完成stone。

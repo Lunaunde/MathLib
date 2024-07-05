@@ -1,0 +1,8 @@
+$execute unless score #$(operand)_have_exponent number matches 0 run scoreboard players operation #$(operand)_exponent number = #$(operand)_integer_part_length number
+$execute unless score #$(operand)_have_exponent number matches 0 run scoreboard players remove #$(operand)_exponent number 1
+$execute if score #$(operand)_have_exponent number matches 1 if score #$(operand)_exponent_part_length number matches 1..3 run scoreboard players operation #$(operand)_exponent number = #$(operand)_number_exponent_1 number
+$execute if score #$(operand)_have_exponent number matches 1 if score #$(operand)_exponent_part_length number matches 2..3 run scoreboard players operation #$(operand)_exponent number *= #10 number
+$execute if score #$(operand)_have_exponent number matches 1 if score #$(operand)_exponent_part_length number matches 2..3 run scoreboard players operation #$(operand)_exponent number += #$(operand)_number_exponent_2 number
+$execute if score #$(operand)_have_exponent number matches 1 if score #$(operand)_exponent_part_length number matches 3 run scoreboard players operation #$(operand)_exponent number *= #10 number
+$execute if score #$(operand)_have_exponent number matches 1 if score #$(operand)_exponent_part_length number matches 3 run scoreboard players operation #$(operand)_exponent number += #$(operand)_number_exponent_3 number
+$execute if score #$(operand)_sgn_exponent number matches -1 run scoreboard players operation #$(operand)_exponent number *= #-1 number
