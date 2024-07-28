@@ -3,6 +3,7 @@ $execute store result score #$(operand)_sgn number run function mathlib:store/if
 
 #part two:data reload
 scoreboard players set #after_exponent number 0
+scoreboard players set #number_end number 0
 $data modify storage math store_information.operand set value "$(operand)"
 function mathlib:store/place_digit_reload with storage math store_information
 
@@ -18,3 +19,5 @@ $scoreboard players operation #$(operand)_exponent_part_length number = #digit_e
 
 #part five:exponent
 $function mathlib:store/exponent {operand:$(operand)}
+
+#最后得到结果有3个数，分别是#$(operand)_integer_part_length,#$(operand)_number_part_length,#$(operand)_exponent_part_length,#$(operand)_sgn
